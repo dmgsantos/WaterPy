@@ -18,7 +18,7 @@ def UPF_GMS_f(q,n,d):
     s = math.pow(q*n/(math.pow(r,2/3)*a),2)
     return (s);
 
-#friction loss Darcy-Weysbach
+#friction loss Darcy-Weisbach
 def UPF_DW_f(q,f,d):
     pi = 4*math.atan(1.0)
     g = 9.80665
@@ -27,18 +27,18 @@ def UPF_DW_f(q,f,d):
     return (s);
 
 #friction loss Colebrook-White
-def UPF_CW_f(q,k,cvisc,d):
+def UPF_CW_f(q,k,kvisc,d):
     pi = 4*math.atan(1.0)
     a= pi*d*d/4
     r=d/4.0
     v=q/a
-    re=v*d/cvisc
+    re=v*d/kvisc
     f1 = 0.5
     f = 1.0
     while math.fabs(f1-f)>= 0.000001:
         part1 = (k/(3.7*d))
         part2 = (2.51/(re*math.sqrt(f)))
         part3 = -2*math.log10(part1 + part2)
-        f1 = math.pow(1/part3,2)
+        f1 = math.pow(1/part3,2.0)
         f=f1
     return (f);
