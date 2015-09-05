@@ -1,1 +1,1 @@
-__author__ = 'Intensidez'
+__author__ = 'Davide Manuel dos Santos'
