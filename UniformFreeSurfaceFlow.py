@@ -6,7 +6,7 @@ __author__ = 'Davide Manuel dos Santos'
 # uniform surface flow heigh for prismatic sections
 # by: Davide Manuel dos santos
 # August, 2015
-def FSF_prismatic_y(q, n, s, b, ml, mr, maxerror, maxiter):
+def UFSF_prismatic_y(q, n, s, b, ml, mr, maxerror, maxiter):
     y = 1.0
     err = 100.0
     iter = 0
@@ -25,7 +25,7 @@ def FSF_prismatic_y(q, n, s, b, ml, mr, maxerror, maxiter):
 # uniform surface flow for a given slope and water height in prismatic channels
 # by: Davide Manuel dos santos
 # August, 2015
-def FSF_prismatic_q(y, n, s, b, ml, mr):
+def UFSF_prismatic_q(y, n, s, b, ml, mr):
     a = y *(b + ml*y*0.5 + mr*y*0.5)
     p = b + y*((1 + ml*ml)**0.5 + (1 + mr*mr)**0.5)
     r = a / p

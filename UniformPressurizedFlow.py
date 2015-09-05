@@ -6,12 +6,12 @@ __author__ = 'Davide Manuel dos Santos'
 import math
 
 #friction loss Hazen-Williams
-def HW_f(q,c,d):
+def UPF_HW_f(q,c,d):
     s = 10.67*math.pow(q,1.85)/(math.pow(c,1.85)*math.pow(d,4.87))
     return (s);
 
 #friction loss Gauckler-Manning-Strickler
-def GMS_f(q,n,d):
+def UPF_GMS_f(q,n,d):
     pi = 4*math.atan(1.0)
     a= pi*d*d/4
     r=d/4.0
@@ -19,7 +19,7 @@ def GMS_f(q,n,d):
     return (s);
 
 #friction loss Darcy-Weysbach
-def DW_f(q,f,d):
+def UPF_DW_f(q,f,d):
     pi = 4*math.atan(1.0)
     g = 9.80665
     a= pi*d*d/4
@@ -27,7 +27,7 @@ def DW_f(q,f,d):
     return (s);
 
 #friction loss Colebrook-White
-def CW_f(q,k,cvisc,d):
+def UPF_CW_f(q,k,cvisc,d):
     pi = 4*math.atan(1.0)
     a= pi*d*d/4
     r=d/4.0
