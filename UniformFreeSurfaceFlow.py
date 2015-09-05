@@ -1,6 +1,6 @@
 __author__ = 'Davide Manuel dos Santos'
-# Module: FreeSurfaceFlow.py
-# version 0.1, August 2015
+# Module: UniformFreeSurfaceFlow.py
+# version 0.1, September 2015
 
 
 # uniform surface flow heigh for prismatic sections

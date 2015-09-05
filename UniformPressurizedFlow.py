@@ -1,7 +1,7 @@
 __author__ = 'Davide Manuel dos Santos'
-# Module: PressurizedFlow.py
+# Module: UniformPressurizedFlow.py
 # by: Davide Manuel dos Santos
-# version 0.1, August 2015
+# version 0.1, September 2015
 
 import math
 
