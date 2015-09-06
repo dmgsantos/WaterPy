@@ -1,5 +1,5 @@
 ##WETpython:
-**Water and Environmental Tools in Python**
+**Water and Environment Tools in Python**
 
 WETpy will support the development of Python functions for Water and Environmental Engineering. 
 
