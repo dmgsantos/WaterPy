@@ -1,7 +1,9 @@
-__author__ = 'Davide Manuel dos Santos'
+__author__ = 'WETpython'
 
 #Files:
 # __init__.py
+# Bioreactor.py
+# Equipment.py
 # Hydrology.py
 # UniformPressurizedFlow.py
 # UniformSurfaceFlow.py

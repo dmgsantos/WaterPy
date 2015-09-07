@@ -1,4 +1,4 @@
-__author__ = 'Davide Manuel dos Santos'
+__author__ = 'WETpython'
 # Module: UniformPressurizedFlow.py
 # by: Davide Manuel dos Santos
 # version 0.1, September 2015
@@ -6,12 +6,12 @@ __author__ = 'Davide Manuel dos Santos'
 import math
 
 #friction loss Hazen-Williams
-def UPF_HW_f(q,c,d):
+def UPF_hw_f(q,c,d):
     s = 10.67*math.pow(q,1.85)/(math.pow(c,1.85)*math.pow(d,4.87))
     return (s);
 
 #friction loss Gauckler-Manning-Strickler
-def UPF_GMS_f(q,n,d):
+def UPF_gms_f(q,n,d):
     pi = 4*math.atan(1.0)
     a= pi*d*d/4
     r=d/4.0
@@ -19,7 +19,7 @@ def UPF_GMS_f(q,n,d):
     return (s);
 
 #friction loss Darcy-Weisbach
-def UPF_DW_f(q,f,d):
+def UPF_dw_f(q,f,d):
     pi = 4*math.atan(1.0)
     g = 9.80665
     a= pi*d*d/4
@@ -27,7 +27,7 @@ def UPF_DW_f(q,f,d):
     return (s);
 
 #friction loss Colebrook-White
-def UPF_CW_f(q,k,kvisc,d):
+def UPF_cw_f(q,k,kvisc,d):
     pi = 4*math.atan(1.0)
     a= pi*d*d/4
     r=d/4.0
@@ -36,9 +36,9 @@ def UPF_CW_f(q,k,kvisc,d):
     f1 = 0.5
     f = 1.0
     while math.fabs(f1-f)>= 0.000001:
+        f=f1
         part1 = (k/(3.7*d))
         part2 = (2.51/(re*math.sqrt(f)))
         part3 = -2*math.log10(part1 + part2)
         f1 = math.pow(1/part3,2.0)
-        f=f1
     return (f);

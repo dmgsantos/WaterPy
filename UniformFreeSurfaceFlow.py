@@ -1,4 +1,4 @@
-__author__ = 'Davide Manuel dos Santos'
+__author__ = 'WETpython'
 # Module: UniformFreeSurfaceFlow.py
 # version 0.1, September 2015
 

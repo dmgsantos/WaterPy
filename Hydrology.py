@@ -1,4 +1,4 @@
-__author__ = 'Davide Manuel dos Santos'
+__author__ = 'WETpython'
 
 # Time of concentration according to Z.P. KIRPICH
 #variables:

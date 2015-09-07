@@ -1,4 +1,4 @@
-__author__ = 'Davide Manuel dos Santos'
+__author__ = 'WETpython'
 
 # Power of a pump
 #variables:
