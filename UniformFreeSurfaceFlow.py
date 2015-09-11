@@ -6,12 +6,13 @@ __author__ = 'WETpython'
 # uniform surface flow heigh for prismatic sections
 # by: Davide Manuel dos santos
 # August, 2015
-def UFSF_prismatic_y(q, n, s, b, ml, mr, maxerror, maxiter):
+def UFSF_prismatic_y(q, n, s, b, ml, mr, maxerror, maxloop):
+
     y = 1.0
     err = 100.0
-    iter = 0
-    while err >= maxerror and iter <= maxiter:
-            iter = iter + 1
+    loop = 0
+    while err >= maxerror and loop <= maxloop:
+            loop += 1
             a = y *(b + ml*y*0.5 + mr*y*0.5)
             p = b + y*((1 + ml*ml)**0.5 + (1 + mr*mr)**0.5)
             r = a / p

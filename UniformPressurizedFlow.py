@@ -1,9 +1,18 @@
 __author__ = 'WETpython'
 # Module: UniformPressurizedFlow.py
-# by: Davide Manuel dos Santos
+# by: WETpython
 # version 0.1, September 2015
 
 import math
+
+#minor loss
+def UPF_minorloss_dh(q,k,d):
+    g = 9.80665
+    pi = 4*math.atan(1.0)
+    area= pi*d*d/4.0
+    dh = k*q**2/(2*g*area**2.)
+    return (dh);
+
 
 #friction loss Hazen-Williams
 def UPF_hw_f(q,c,d):
@@ -13,9 +22,9 @@ def UPF_hw_f(q,c,d):
 #friction loss Gauckler-Manning-Strickler
 def UPF_gms_f(q,n,d):
     pi = 4*math.atan(1.0)
-    a= pi*d*d/4
+    a= pi*d*d/4.0
     r=d/4.0
-    s = math.pow(q*n/(math.pow(r,2/3)*a),2)
+    s = math.pow(q*n/(math.pow(r,2/3)*a),2.0)
     return (s);
 
 #friction loss Darcy-Weisbach
