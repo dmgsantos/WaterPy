@@ -4,6 +4,7 @@ __author__ = 'WETpython'
 # __init__.py
 # Bioreactor.py
 # Equipment.py
+# Geometry
 # Hydrology.py
 # UniformPressurizedFlow.py
 # UniformSurfaceFlow.py

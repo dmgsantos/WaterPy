@@ -3,7 +3,6 @@ __author__ = 'WETpython'
 # by: WETpython
 # version 0.1, September 2015
 
-import math
 from WaterProperties import *
 from Geometry import *
 

@@ -1,14 +1,14 @@
 __author__ = 'WETpython'
 
 import sys
-# Time of concentration according to Z.P. KIRPICH
-#variables:
-# l, km
-# s, %
-# tc, hours
+# River concentration time according to Z.P. KIRPICH
+# Tc, minutes
+# l, m
+# s, m/m
+# tc, min
 def HYD_kirpich_tc(l,s):
-    tc = 0.39*(l*l/s)**0.385
-    return (tc);
+    tc = 0.00032*(l**0.77/s**0.385)
+    return(tc);
 
 #CN transformation according to AMC I,II or III
 def HYD_scs_cn(cn2,amc):
@@ -50,3 +50,20 @@ def HYD_scs_inf(p,cn2,amc):
     q = HYD_scs_q(p,cn2,amc)
     inf = p - q
     return (inf);
+
+# HUT of SCS - not finished!!!
+def HYD_hut_hydrogram(l,s,area):
+    tc = HYD_kirpich_tc(l,s)
+    d = tc/5.0
+    tp = d/2.0 + 0.6*tc
+    tr = 1.67*tp
+    qp = 0.208*area/tp
+    n = (tp+tr)/d
+    return(tc, d,tp,tr,qp,n);
+
+
+
+
+
+
+
