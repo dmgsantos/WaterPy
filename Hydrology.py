@@ -51,15 +51,15 @@ def HYD_scs_inf(p,cn2,amc):
     inf = p - q
     return (inf);
 
-# HUT of SCS - not finished!!!
-def HYD_hut_hydrogram(l,s,area):
+# Synhtetic HUT of SCS
+def HYD_scs_tuh(l,s,area):
     tc = HYD_kirpich_tc(l,s)
-    d = tc/5.0
-    tp = d/2.0 + 0.6*tc
+    d = 0.133*tc
+    L = 0.6*tc
+    tp = d/2.0 + L
     tr = 1.67*tp
     qp = 0.208*area/tp
-    n = (tp+tr)/d
-    return(tc, d,tp,tr,qp,n);
+    return(tc, d,tp,tr,qp);
 
 
 

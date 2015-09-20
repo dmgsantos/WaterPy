@@ -43,3 +43,21 @@ def EQ_pumpstation_npshr(zr1,ze,q,t,s,ds,ns,sumks,ls, patm):
 
     return (npshr);
 
+# power of a turbine
+def EQ_turbine_p(q, h, t,s, y):
+    g = 9.80665
+    gamma = WATER_density_gamma(t,s)
+    p = gamma * q * h * y
+    return (p);
+
+
+# power and head of a hydropower station
+def EQ_hydropower_p(zres,ze,q,yturbine,t,s,d,n,sumk,lpipe):
+
+    jl = UPF_gms_f(q,n,d)*lpipe # continuos headloss in the pipe
+    dh = UPF_minorloss_dh(q,sumk,d) # sum of minor losses in the pipe
+    h = zres - ze - jl - dh # falling height
+
+    p = EQ_turbine_p(q, h, t,s, yturbine) # elevation power
+
+    return (p, h);
