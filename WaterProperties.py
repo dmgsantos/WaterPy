@@ -63,7 +63,6 @@ def WATER_viscosity_kvisc(t,s):
 def WATER_reynoldsnumber_re(q,d,t,s):
     pi = 4*math.atan(1.0)
     a= pi*d**2/4
-    r=d/4.0
     v=q/a
     kvisc = WATER_viscosity_kvisc(t,s)
     re=v*d/kvisc
