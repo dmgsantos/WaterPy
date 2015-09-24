@@ -6,6 +6,7 @@ __author__ = 'WETpython'
 # Equipment.py
 # Geometry
 # Hydrology.py
+# PorousMediaFlow.py
 # UniformPressurizedFlow.py
 # UniformSurfaceFlow.py
 # WaterProperties.py

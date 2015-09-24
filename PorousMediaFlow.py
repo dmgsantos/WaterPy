@@ -13,22 +13,22 @@ def PMF_darcylaw_kdarcy(t,s,k):
     return (kdarcy)
 
 #Darcy law_specific discharge
-def PMF_darcylaw_q(dh,dl,t,s,k):
+def PMF_darcylaw_q(dh,dx,t,s,k):
     kdarcy = PMF_darcylaw_kdarcy(t,s,k) #hydraulic condutivity (m/s)
     dvisc = WATER_viscosity_dvisc(t)    #dinamic viscosity (Pa.s)
-    q = -kdarcy*dh/(dvisc*dl)           #specific discharge (m/s)
+    q = -kdarcy*dh/(dvisc*dx)           #specific discharge (m/s)
     return (q)
 
 #Flux velocity in porous media
 # n, porosity (0 to 1)
-def PMF_darcylaw_v(dh,dl,t,s,k,n):
-    q = PMF_darcylaw_q(dh,dl,t,s,k) #specific discarge (m/s)
+def PMF_darcylaw_v(dh,dx,t,s,k,n):
+    q = PMF_darcylaw_q(dh,dx,t,s,k) #specific discarge (m/s)
     v = q/n                         #flux velocity in porous media
     return (v)
 
 #Porous media reynold number
-def PMF_darcylaw_re(dh,dl,k,n,t,s):
-    q = PMF_darcylaw_q(dh,dl,t,s,k)     #specific discarge (m/s)
+def PMF_darcylaw_re(dh,dx,t,s,k,n):
+    q = PMF_darcylaw_q(dh,dx,t,s,k)     #specific discarge (m/s)
     kvisc = WATER_viscosity_kvisc(t,s)  #water dynamic viscosity (Pa.s)
     d = (k/n)**0.5                      #grain diameter for porous media
     re = q*d/kvisc                      #Reynolds number
