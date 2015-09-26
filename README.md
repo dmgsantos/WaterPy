@@ -71,5 +71,6 @@ WaterProperties:
 * WATER_antoine_vp(): Vapor pressure with Antoine equation;
 * WATER_density_rho(): Water density;
 * WATER_viscosity_dvisc(): Dynamic viscosity of water;
-* WATER_viscosity_kvisc(): Kynematic viscosty of water.
+* WATER_viscosity_kvisc(): Kynematic viscosty of water;
+* WATER_density_gamma(): Water specific weight. 
 
