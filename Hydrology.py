@@ -1,6 +1,7 @@
 __author__ = 'WETpython'
 
 import sys
+import math
 # River concentration time according to Z.P. KIRPICH
 # Tc, minutes
 # l, m
@@ -51,17 +52,33 @@ def HYD_scs_inf(p,cn2,amc):
     inf = p - q
     return (inf);
 
-# Synhtetic HUT of SCS
-def HYD_scs_tuh(l,s,area):
+# Synthetic Dimensionless Unit Hydrograph of SCS
+def HYD_scs_duh(l,s,area):
     tc = HYD_kirpich_tc(l,s)
-    d = 0.133*tc
-    L = 0.6*tc
-    tp = d/2.0 + L
-    tr = 1.67*tp
-    qp = 0.208*area/tp
-    return(tc, d,tp,tr,qp);
-
-
+    d = 0.133*tc #unit excess rainfall, h
+    tl = 0.6*tc #time lag, h
+    tp = d/2.0 + tl #time to peak of the hydrogram, h
+    tr = 1.67*tp #recession limb time of the hydrogram, h
+    tb = tr + tp #base time of the hydrogram, h
+    qp = 2.08*area*10**(-6)/tp #peak flow, h
+    n = math.ceil(tb/d)+1
+    duh = [] #Dimensionless Unit Hydrograph
+    tbj = 0.0
+    for i in range(0,n):
+        duh[i] =  duh.append(i)
+        if tbj == 0.0:
+            duh[i] =  0.0
+            tbj += d
+        elif tbj <= tp:
+            duh[i] = tbj*qp/tp
+            tbj += d
+        elif tbj > tp and tbj <= tb:
+            duh[i] = (tb-tbj)*qp/tr
+            tbj += d
+        elif tbj > tb:
+            duh[i] = 0.0
+            tbj += d
+    return(tc, d,tp,tr,qp, duh);
 
 
 
