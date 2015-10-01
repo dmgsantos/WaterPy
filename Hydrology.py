@@ -81,6 +81,25 @@ def HYD_scs_duh(l,s,area):
     return(tc, d,tp,tr,qp, duh);
 
 
+# Flood hydrogram (SCS)
+def HYD_scs_hydrograph(l,s,area,p):
+
+    (tc, d,tp,tr,qp, duh)= HYD_scs_duh(l,s,area)
+    matrix = [[0 for i in range(len(duh)+len(p)-1)] for j in range (len(p))]
+    hydrogram = [0 for i in range(len(duh)+len(p)-1)]
+    volume = 0.0
+    for i in range(len(p)):
+        for j in range(len(duh)):
+            matrix[i][j+i] = p[i]*duh[j]/10.0 #matrix of the DUH for each rain period (d = unit excess rainfall)
+    for i in range(len(duh)+len(p)-1):
+        for j in range (len(p)):
+            hydrogram[i] += matrix[j][i] #hydrograph
+            volume += hydrogram[i]*d*3600 # volume of the hydrograph
+
+    return(d,hydrogram,volume);
+
+
+
 
 
 
