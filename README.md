@@ -49,6 +49,8 @@ Hydrology:
 * HYD_scs_cn(): Curve Number transformation according to the AMC (Antecedent Moisture Condition);
 * HYD_scs_q(): Run-off according to SCS;
 * HYD_scs_inf(): Infiltration according to SCS.
+* HYD_scs_duh(): Synthetic Dimensionless Unit Hydrograph according to SCS.
+* HYD_scs_hydrograph(): Flow hydrograph according to SCS.
 
 PorousMediaFlow:
 * PMF_darcylaw_kdarcy(): Hydraulic conductivity;
