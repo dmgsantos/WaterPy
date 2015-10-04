@@ -9,4 +9,6 @@ __author__ = 'WETpython'
 # PorousMediaFlow.py
 # UniformPressurizedFlow.py
 # UniformSurfaceFlow.py
+# WaterChemistry.py
 # WaterProperties.py
+
