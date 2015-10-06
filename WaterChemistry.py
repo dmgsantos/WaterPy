@@ -1,10 +1,10 @@
 __author__ = 'WETpython'
 import math
-from WaterProperties import *
+from UnitConversion import *
 
 #Saturation pH calcite or calcium carbonate
 def WATERCHEM_phscalcium(t,tds,ca,hco3):
-    tk = WATER_temperature_c2k(t) # temperature: oC to K
+    tk = UNIT_temperature_c2k(t) # temperature: oC to K
     mca = ca*0.001/40.08 # Ca2+: mg/l to Mole/l
     mhco3= hco3*0.001/100 # Alkalinity, hco3- : mg/l to Mole/l
     i = 2.5*10**(-5)*tds # ionic strenght, Moles/l

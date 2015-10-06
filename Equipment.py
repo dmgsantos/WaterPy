@@ -1,7 +1,7 @@
 __author__ = 'WETpython'
 
-#import math
-#from WaterProperties import *
+import math
+from WaterProperties import *
 from UniformPressurizedFlow import *
 
 # Power of a pump

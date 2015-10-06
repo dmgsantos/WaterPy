@@ -43,3 +43,18 @@ def UPF_cw_f(q,e,t,s,d):
         part3 = -2*math.log10(part1 + part2)
         f1 = math.pow(1/part3,2.0)
     return (f);
+
+# friction loss for laminar flow
+def UPF_laminarflow_f(q,t,s,d):
+    re= WATER_reynoldsnumber_re(q,d,t,s)
+    f = 64/re
+    return(f);
+
+#friction loss according to Moody chart
+def UPF_moody_f(q,e,t,s,d):
+    re= WATER_reynoldsnumber_re(q,d,t,s)
+    if re <= 2000:
+        f = UPF_laminarflow_f(q,t,s,d)
+    if re > 2000:
+        f = UPF_cw_f(q,e,t,s,d)
+    return(f);

@@ -1,16 +1,7 @@
 __author__ = 'WETpython'
 
 import math
-
-# converte temperature from Kelvin to Celcius
-def WATER_temperature_k2c(tkelvin):
-    tcelcius = tkelvin - 273.15
-    return (tcelcius)
-
-# converte temperature from Celcius to Kelvin
-def WATER_temperature_c2k(tcelcius):
-    tkelvin = tcelcius + 273.15
-    return (tkelvin)
+from UnitConversion import *
 
 # Vapor pressure according to Antoine formula
 def WATER_antoine_vp(t):
@@ -48,7 +39,7 @@ def WATER_viscosity_dvisc(t):
     A = 0.00002414
     B = 247.8
     C = 140.0
-    T = WATER_temperature_c2k(t)
+    T = UNIT_temperature_c2k(t)
     dvisc = A*10**(B/(T-C))
     return(dvisc);
 
