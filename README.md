@@ -1,7 +1,7 @@
 ##WaterPython:
 **Water and Environment Tools in Python**
 
-WaterPython aims to development of a Python library  for water and environmental engineering.
+WaterPython aims to develop a Python library for water and environmental engineering.
 This is a free library for any use.
 
 Collaborations and contributions to the project with new modules or functions, improvement of the existing code, are most than welcome. 
