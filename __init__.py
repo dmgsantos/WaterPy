@@ -1,4 +1,4 @@
-__author__ = 'WETpython'
+__author__ = 'WaterPython'
 
 #Files:
 # __init__.py

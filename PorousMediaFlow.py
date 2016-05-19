@@ -1,4 +1,4 @@
-__author__ = 'WETpython'
+__author__ = 'WaterPython'
 
 from WaterProperties import *
 

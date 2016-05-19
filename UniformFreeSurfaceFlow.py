@@ -1,4 +1,4 @@
-__author__ = 'WETpython'
+__author__ = 'WaterPython'
 # Module: UniformFreeSurfaceFlow.py
 # version 0.1, September 2015
 

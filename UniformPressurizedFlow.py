@@ -1,6 +1,6 @@
-__author__ = 'WETpython'
+__author__ = 'WaterPython'
 # Module: UniformPressurizedFlow.py
-# by: WETpython
+# by: WaterPython
 # version 0.1, September 2015
 
 from WaterProperties import *

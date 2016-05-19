@@ -1,4 +1,4 @@
-__author__ = 'WETpython'
+__author__ = 'WaterPython'
 
 # converte temperature from Kelvin to Celcius
 def UNIT_temperature_k2c(tkelvin):

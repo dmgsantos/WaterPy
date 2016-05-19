@@ -1,6 +1,5 @@
-__author__ = 'WETpython'
+__author__ = 'WaterPython'
 
-import math
 from WaterProperties import *
 from UniformPressurizedFlow import *
 
@@ -14,7 +13,7 @@ from UniformPressurizedFlow import *
 # y, pump yield.
 
 def EQ_pump_p(q, h, t,s, y):
-    g = 9.80665
+
     gamma = WATER_density_gamma(t,s)
     p = gamma * q * h / y
     return (p);
@@ -45,7 +44,7 @@ def EQ_pumpstation_npshr(zr1,ze,q,t,s,ds,ns,sumks,ls, patm):
 
 # power of a turbine
 def EQ_turbine_p(q, h, t,s, y):
-    g = 9.80665
+
     gamma = WATER_density_gamma(t,s)
     p = gamma * q * h * y
     return (p);

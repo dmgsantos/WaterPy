@@ -1,4 +1,4 @@
-__author__ = 'WETpython'
+__author__ = 'WaterPython'
 
 import sys
 import math
@@ -26,7 +26,7 @@ def HYD_scs_cn(cn2,amc):
 
 # determina)on of potential storage according to SCS
 def HYD_scs_s(cn2,amc):
-    cn = HYD_SCS_cn(cn2,amc)
+    cn = HYD_scs_cn(cn2,amc)
     s = 25400/cn - 254
     return (s);
 
