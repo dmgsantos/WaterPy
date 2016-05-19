@@ -16,9 +16,8 @@ Any question or suggestion please contact us: wetpython@gmail.com
 
 WaterPython thank you in advance for your contribution and support.
 
-* Follow the project on Twitter: https://twitter.com/WETpython
-* Get the library at https://github.com/WETpython
-* For any question: wetpython@gmail.com
+* Get the library at https://github.com/WaterPython
+* For any question: dmgsantos@gmail.com
 
 Modules and functions() included in the library:
 
