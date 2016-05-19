@@ -1,7 +1,7 @@
-##WETpython:
+##WaterPython:
 **Water and Environment Tools in Python**
 
-WETpython aims to development of a Python library  for water and environmental engineering.
+WaterPython aims to development of a Python library  for water and environmental engineering.
 This is a free library for any use.
 
 Collaborations and contributions to the project with new modules or functions, improvement of the existing code, are most than welcome. 
@@ -14,7 +14,7 @@ If interested, please contact or submit your Python code, with a file with the f
 
 Any question or suggestion please contact us: wetpython@gmail.com
 
-WETpython thank you in advance for your contribution and support.
+WaterPython thank you in advance for your contribution and support.
 
 * Follow the project on Twitter: https://twitter.com/WETpython
 * Get the library at https://github.com/WETpython
