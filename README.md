@@ -6,14 +6,14 @@ This is a free library for any use.
 
 Collaborations and contributions to the project with new modules or functions, improvement of the existing code, are most than welcome. 
 
-If interested, please contact or submit your Python code, with a file with the following information to be included in WETpython blog:
+If interested, please contact or submit your Python code, with a file with the following information to be included in WaterPython blog:
 * An explanation of the function to be included in the section "About" of the function page;
 * A simple "sample Code" easily read;
 * Finally, the expected "Result" .
 * New modules water and environment can be created and included in the library.
 
 WaterPython thank you in advance for your contribution and support.
-
+* Get in contact with the project: http://waterpython.blogspot.com/
 * Get the library at https://github.com/WaterPython
 * For any question or sugestion: dmgsantos@gmail.com
 
