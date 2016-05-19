@@ -12,12 +12,10 @@ If interested, please contact or submit your Python code, with a file with the f
 * Finally, the expected "Result" .
 * New modules water and environment can be created and included in the library.
 
-Any question or suggestion please contact us: wetpython@gmail.com
-
 WaterPython thank you in advance for your contribution and support.
 
 * Get the library at https://github.com/WaterPython
-* For any question: dmgsantos@gmail.com
+* For any question or sugestion: dmgsantos@gmail.com
 
 Modules and functions() included in the library:
 
