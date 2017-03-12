@@ -13,8 +13,8 @@ If interested, please contact or submit your Python code, with a file with the f
 * New modules water and environment can be created and included in the library.
 
 WaterPython thank you in advance for your contribution and support.
-* Get in contact with the project: http://waterpython.blogspot.com/
-* Get the library at https://github.com/WaterPython
+* Get in contact with the project: http://waterpy.blogspot.com/
+* Get the library at https://github.com/dmgsantos/WaterPy
 * For any question or sugestion: dmgsantos@gmail.com
 
 Modules and functions() included in the library:
